@@ -107,6 +107,10 @@ public class Report0724 {
 //			System.out.println("방번호 : "  +", 투숙객 : " + value);
 //		}
 		
+		//Entry는 Map안에있는 인터페이스인데 왜 Map안에있냐면 Map밖에 Entry를 사용하지 않으니 그냥 Map안에둔거임ㅇㅋ?
+		//근데 Entry가뭐냐면 나도 좀 헷갈리긴하긴한데 뭐냐면 그냥 쉽게말하면 키와 밸류를 합쳐놓은거임 ㅇㅋ?
+		//근데이제 이 Entry들을 묶어 묶어가지고 Set에 담아놓는게 entrySet() 메소드야 ㅇㅋ? 그니까 Entry들의 집합인 Set을 리턴하는거지
+		//
 		Set<Map.Entry<String, String>> entrySet = roomReserveList.entrySet();
 		Iterator<Map.Entry<String, String>> entryIt = entrySet.iterator();
 		while(entryIt.hasNext()) {
